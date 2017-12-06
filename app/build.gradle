@@ -18,6 +18,24 @@ android {
     }
 }
 
+ext {
+    bintrayRepo = 'Utility' // your repo name
+    bintrayName = 'DemoBintryLibrary' // has to be same as your library module name
+    publishedGroupId = 'com.timeutil' // your module package name
+    libraryName = 'DemoBintryLibrary'
+    artifact = 'DemoBintryLibrary' // has to be same as your library module name
+    libraryDescription = 'A set of methods used to manipulate time object'
+    siteUrl = 'https://github.com/akshitaRadiance/DemoBintryLibrary'
+    gitUrl = 'https://github.com/akshitaRadiance/DemoBintryLibrary.git'
+    libraryVersion = '1.0'
+    developerId = 'akshita28'
+    developerName = 'Akshita Patel'
+    developerEmail = 'akshita@radiancetechnologies.in'
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -26,3 +44,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'

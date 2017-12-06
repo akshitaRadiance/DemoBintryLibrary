@@ -33,7 +33,6 @@ Thumbs.db
 build/
 .idea/gradle.xml
 app/app.iml
-local.properties
 
 #NDK
 obj/
